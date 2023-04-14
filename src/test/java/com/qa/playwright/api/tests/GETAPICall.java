@@ -1,5 +1,7 @@
 package com.qa.playwright.api.tests;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.microsoft.playwright.APIRequestContext;
 import com.microsoft.playwright.APIResponse;
 import com.microsoft.playwright.Playwright;
@@ -7,10 +9,12 @@ import com.microsoft.playwright.APIRequest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.io.IOException;
+
 public class GETAPICall {
 
     @Test
-    public void getUsersApiTests(){
+    public void getUsersApiTests() throws IOException {
 
         Playwright playwright = Playwright.create();
         APIRequest apiRequest = playwright.request();
@@ -24,6 +28,9 @@ public class GETAPICall {
         String statusResponseText = apiResponse.statusText();
         System.out.println(statusResponseText);
 
-        apiResponse.body();
+        ObjectMapper objectMapper = new ObjectMapper();
+        JsonNode jsonResponse = objectMapper.readTree(apiResponse.body());
+        String jsonPrettyResponse = jsonResponse.toPrettyString();
+        System.out.println(jsonPrettyResponse);
     }
 }
