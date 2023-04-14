@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8f4796ad-2236-4649-9e3d-a318867470a6" name="Changes" comment="new changes">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/playwright/api/tests/GETAPICall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/playwright/api/tests/GETAPICall.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/qa/playwright/api/tests/GETAPICall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/qa/playwright/api/tests/getApiCall.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +41,7 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="GETAPICall" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="getApiCall" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="PlayWrightAPITesting" />
       <extension name="coverage">
         <pattern>
@@ -50,7 +50,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.qa.playwright.api.tests" />
-      <option name="MAIN_CLASS_NAME" value="com.qa.playwright.api.tests.GETAPICall" />
+      <option name="MAIN_CLASS_NAME" value="com.qa.playwright.api.tests.getApiCall" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -60,7 +60,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.GETAPICall" />
+        <item itemvalue="TestNG.getApiCall" />
       </list>
     </recent_temporary>
   </component>
